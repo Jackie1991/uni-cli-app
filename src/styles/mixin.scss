@@ -1,0 +1,92 @@
+/**
+ * 全尺寸定位至包含块
+ * param: $pos 定位方式，可选值：position | fixed
+ * param: $n 定位距边缘距离
+ */
+@mixin position-inset($pos: absolute, $n: 0) {
+  position: $pos;
+  inset: $n;
+}
+
+/**
+ * 居中定位至包含块
+ * param: $pos 定位方式，可选值：position | fixed
+ */
+@mixin position-center($pos: position) {
+  position: $pos;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**
+ * flex 居中
+ * param: $justify 横向排列方式，可选值：center | flex-start | flex-end | space-around | space-between | space-evenly
+ * param: $align 纵向排列方式，可选值：center | flex-start | flex-end
+ */
+/* flex 居中 */
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flex-x-center {
+  @include flex-center(center, flex-start);
+}
+@mixin flex-y-center {
+  @include flex-center(flex-start, center);
+}
+@mixin flex-between {
+  @include flex-center(space-between, flex-start);
+}
+@mixin flex-around {
+  @include flex-center(space-around, flex-start);
+}
+
+/**
+ * flex 可换行
+ */
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**
+ * flex 纵向
+ */
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-column-center {
+  @include flex-column;
+  align-items: center;
+}
+
+/**
+ * grid 布局
+ * param: $n 单行数量
+ * param: $gap 子元素间距
+ */
+@mixin grid($n: 2, $gap: 20rpx) {
+  display: grid;
+  grid-template-columns: repeat($n, 1fr);
+  gap: $gap;
+}
+
+/**
+ * 文本省略号
+ * param: $num 行数
+ */
+@mixin text-ellipsis($num: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $num == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+    line-clamp: $num;
+  }
+}

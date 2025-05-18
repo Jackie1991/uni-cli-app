@@ -1,0 +1,106 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#1296db",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/goods/index",
+			"style": {
+				"navigationBarTitleText": "商品列表"
+			}
+		},
+		{
+			"path": "pages/goods/detail/index",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单确认"
+			}
+		},
+		{
+			"path": "pages/order/list/index",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+			}
+		},
+		{
+			"path": "pages/order/detail/index",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_on.png",
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"iconPath": "static/tabbar/classify.png",
+				"selectedIconPath": "static/tabbar/classify_on.png",
+				"pagePath": "pages/goods/index",
+				"text": "分类"
+			},
+			{
+				"iconPath": "static/tabbar/cart.png",
+				"selectedIconPath": "static/tabbar/cart_on.png",
+				"pagePath": "pages/cart/index",
+				"text": "购物车"
+			},
+			{
+				"iconPath": "static/tabbar/me.png",
+				"selectedIconPath": "static/tabbar/me_on.png",
+				"pagePath": "pages/me/index",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^c-(.*)": "@/components/c-$1/index.vue"
+		}
+	}
+}

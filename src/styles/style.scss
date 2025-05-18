@@ -1,0 +1,62 @@
+@use './var.scss';
+
+/**
+ * 统一不同平台使用的基础样式
+ */
+@mixin global {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--c-font-size);
+  color: var(--c-text-color);
+  scroll-behavior: smooth;
+  background: var(--c-bg-color);
+
+  view {
+    box-sizing: border-box;
+  }
+
+  view[class*='-container'] {
+    position: relative;
+    @include flex-column;
+    min-height: calc(100vh - var(--window-top) - var(--window-bottom));
+  }
+
+  .uni-forms-item__label,
+  .uni-forms-item__content,
+  .uni-easyinput,
+  .uni-easyinput__content-input,
+  .uni-easyinput__content-textarea,
+  .uni-easyinput__placeholder-class,
+  .uni-select,
+  .uni-select__input-placeholder,
+  .uni-select__selector-empty,
+  .uni-select__selector-item,
+  .uni-data-checklist .checklist-group .checklist-box .checklist-content .checklist-text,
+  .uni-date-x,
+  .uni-date__x-input {
+    font-size: inherit;
+  }
+
+  .uni-icons {
+    @include flex-center;
+    line-height: 1;
+  }
+
+  .uni-popup {
+    &__wrapper {
+      padding-bottom: var(--window-bottom);
+    }
+  }
+}
+
+/* #ifdef H5 || WEB */
+#app {
+  @include global;
+}
+/* #endif */
+
+/* #ifndef H5 || WEB */
+page {
+  @include global;
+}
+/* #endif */

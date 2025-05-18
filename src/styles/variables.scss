@@ -1,0 +1,42 @@
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+$uni-color-info: #8f939c;
+
+$uni-color-primary-light: rgba($uni-color-primary, 0.4);
+$uni-color-primary-lighter: rgba($uni-color-primary, 0.2);
+$uni-color-primary-disable: #94bcff;
+
+$uni-color-success-light: rgba($uni-color-success, 0.4);
+$uni-color-success-lighter: rgba($uni-color-success, 0.2);
+$uni-color-success-disable: #8cde9b;
+
+$uni-color-warning-light: rgba($uni-color-warning, 0.4);
+$uni-color-warning-lighter: rgba($uni-color-warning, 0.2);
+$uni-color-warning-disable: #f9d39f;
+
+$uni-color-error-light: rgba($uni-color-error, 0.4);
+$uni-color-error-lighter: rgba($uni-color-error, 0.2);
+$uni-color-error-disable: #f29e99;
+
+$uni-color-info-light: rgba($uni-color-info, 0.4);
+$uni-color-info-lighter: rgba($uni-color-info, 0.2);
+$uni-color-info-disable: #c7c9ce;
+
+/* 文字基本颜色 */
+$uni-text-color: #333; // 基本色
+$uni-text-color-reverse: #fff; // 反向色
+$uni-text-color-grey: #999; // 辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color: #fff;
+$uni-bg-color-grey: #f4f4f4;
+$uni-bg-color-hover: #f1f1f1; // 点击状态颜色
+$uni-bg-color-mask: rgba(0, 0, 0, 0.4); // 遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color: #dddddd;

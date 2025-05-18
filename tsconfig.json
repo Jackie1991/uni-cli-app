@@ -1,0 +1,24 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "verbatimModuleSyntax": false,
+    "noUnusedLocals": true, // 检查未使用的局部变量
+    "noUnusedParameters": true, // 检查未使用的函数参数
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "lib": ["esnext", "dom"],
+    "types": ["@dcloudio/types", "@types/node", "vite/client"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "types/**/*.d.ts", "src/**/*.vue", "mock/**/*.ts"],
+  "exclude": ["node_modules"]
+}

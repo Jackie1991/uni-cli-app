@@ -1,0 +1,47 @@
+@use './variables.scss' as vars;
+
+:root,
+page {
+  --c-font-size: 28rpx; // 字体大小
+  --c-padding: 20rpx; // padding大小
+
+  --c-border-color: #{vars.$uni-border-color}; // 边框
+  --c-border: 1px solid var(--c-border-color); // 边框
+
+  --c-text-color: #{vars.$uni-text-color}; // 字体颜色
+  --c-text-color-reverse: #{vars.$uni-text-color-reverse}; // 反向字体颜色
+  --c-text-placeholder: #{vars.$uni-text-color-placeholder}; // 占位字体颜色
+  --c-text-disable: #{vars.$uni-text-color-disable}; // 禁用字体颜色
+
+  --c-bg-color: #{vars.$uni-bg-color}; // 背景色
+  --c-bg-color-grey: #{vars.$uni-bg-color-grey}; // grey背景色
+
+  --c-color-red: #c00000; // 热点色
+  --c-color-grey: #{vars.$uni-text-color-grey};
+
+  // 主要颜色
+  --c-color-primary: #{vars.$uni-color-primary};
+  --c-color-primary-light: #{vars.$uni-color-primary-light};
+  --c-color-primary-lighter: #{vars.$uni-color-primary-lighter};
+  --c-color-primary-disable: #{vars.$uni-color-primary-disable};
+  // 成功颜色
+  --c-color-success: #{vars.$uni-color-success};
+  --c-color-success-light: #{vars.$uni-color-success-light};
+  --c-color-success-lighter: #{vars.$uni-color-success-lighter};
+  --c-color-success-disable: #{vars.$uni-color-success-disable};
+  // 警告颜色
+  --c-color-warning: #{vars.$uni-color-warning};
+  --c-color-warning-light: #{vars.$uni-color-warning-light};
+  --c-color-warning-lighter: #{vars.$uni-color-warning-lighter};
+  --c-color-warning-disable: #{vars.$uni-color-warning-disable};
+  // 错误颜色
+  --c-color-error: #{vars.$uni-color-error};
+  --c-color-error-light: #{vars.$uni-color-error-light};
+  --c-color-error-lighter: #{vars.$uni-color-error-lighter};
+  --c-color-error-disable: #{vars.$uni-color-error-disable};
+  // 错误颜色
+  --c-color-info: #{vars.$uni-color-info};
+  --c-color-info-light: #{vars.$uni-color-info-light};
+  --c-color-info-lighter: #{vars.$uni-color-info-lighter};
+  --c-color-info-disable: #{vars.$uni-color-info-disable};
+}
